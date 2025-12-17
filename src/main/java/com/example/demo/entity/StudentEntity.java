@@ -27,7 +27,7 @@ public class StudentEntity {
     }
 
     
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -45,7 +45,7 @@ public class StudentEntity {
 
 
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
