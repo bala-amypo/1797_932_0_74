@@ -1,55 +1,52 @@
-package com.example.Art.Entity;
+package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-
 @Entity
 public class StudentEntity {
+
     @Id
-    @GeneratedValue(strategy = GeneratedValueType.Identity)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
-    private double cgpa;
+    private float cgpa;
 
-    public StudentEntity(Long id,String name,String email, double cgpa){
+    public StudentEntity(Long id, String name, String email, float cgpa) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.cgpa = cgpa;
     }
 
-    public StudentEntity(){
-
+    public StudentEntity() {
+        
     }
-
-    
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public void setCgpa(double cgpa) {
+    public String getEmail() {
+        return this.email;
+    }
+
+    public void setCgpa(float cgpa) {
         this.cgpa = cgpa;
     }
 
-
-
-
-    public String getName() {
-        return name;
-    }
-    public String getEmail() {
-        return email;
-    }
-    public double getCgpa() {
-        return cgpa;
+    public float getCgpa() {
+        return this.cgpa;
     }
 }
