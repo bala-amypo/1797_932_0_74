@@ -43,7 +43,7 @@ public class StudentController {
             return "Student deleted successfully.";
         } else {
             return "Student not found.";
-        }
+        } 
     }
 
 }
