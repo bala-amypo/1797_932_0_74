@@ -2,7 +2,13 @@ package com.example.demo.entity;
 
 import jakarta.persistence.Entity
 
+
 @Entity
-public class StudnetEntity {
+public class StudentEntity {
+    private int id;
+    private string name;
+    private string email;
+    private string password;
+
 
 }
