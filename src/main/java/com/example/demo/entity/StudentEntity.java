@@ -1,12 +1,21 @@
 package com.example.Art.Entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+
+@Entity
 public class StudentEntity {
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GeneratedValueType.Identity)
+    private Long id;
     private String name;
     private String email;
     private double cgpa;
 
-    public StudentEntity(int id,String name,String email, double cgpa){
+    public StudentEntity(Long id,String name,String email, double cgpa){
         this.id = id;
         this.name = name;
         this.email = email;
