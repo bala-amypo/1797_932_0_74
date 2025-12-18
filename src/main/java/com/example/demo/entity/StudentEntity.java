@@ -36,7 +36,7 @@ public class StudentEntity {
 
     
 
-    public void getId() {
+    public Long getId() {
         return id;
     }
     
